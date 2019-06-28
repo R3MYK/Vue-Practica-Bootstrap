@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
@@ -30,6 +31,11 @@ export default new Router({
       path: '/cards',
       name: 'cards',
       component: () => import( './views/Cards.vue')
+    },
+    {
+      path: '/form',
+      name: 'form',
+      component: () => import( './views/Formulario.vue')
     }
   ]
 })
